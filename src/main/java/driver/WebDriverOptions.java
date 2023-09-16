@@ -20,13 +20,13 @@ public class WebDriverOptions {
     protected WebDriverWait wait;
     protected Actions action;
 
-    public static WebDriver getDriver() {
+    public WebDriver getDriver() {
         return driver;
     }
 
-    public static Actions getAction() { return action; }
+    public Actions getAction() { return action; }
 
-    public static WebDriverWait getWait() {
+    public WebDriverWait getWait() {
         return wait;
     }
 
