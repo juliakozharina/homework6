@@ -16,17 +16,19 @@ public class WebDriverOptions {
 
     public static final Logger logger = LogManager.getLogger(Step.class.getName());
 
-    protected WebDriver driver;
-    protected WebDriverWait wait;
-    protected Actions action;
+    protected  WebDriver driver;
+    protected  WebDriverWait wait;
+    protected  Actions action;
 
-    public WebDriver getDriver() {
+    public  WebDriver getDriver() {
         return driver;
     }
 
-    public Actions getAction() { return action; }
+    public  Actions getAction() {
+        return action;
+    }
 
-    public WebDriverWait getWait() {
+    public  WebDriverWait getWait() {
         return wait;
     }
 
@@ -45,7 +47,7 @@ public class WebDriverOptions {
         logger.debug("driver is created");
     }
 
-    public void quit(){
+    public  void quit(){
         if (driver != null) {
             driver.quit();
         }

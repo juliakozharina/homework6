@@ -49,7 +49,7 @@ public class TestHW {
                 .selectRemoteWork()
                 .saveChangesOnTheProfilePage();
 
-        WebDriverOptions.getDriver().quit();
+  //      WebDriverOptions.getDriver().quit();
         webDriverOptions.create();
 
 

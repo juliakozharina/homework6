@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -14,7 +15,7 @@ public class AuthorizationPage extends BasePage {
     @FindBy (xpath = "//button[@class=\"sc-9a4spb-0 gYNtqF sc-11ptd2v-2-Component cElCrZ\"]")
     private WebElement submitButton;
 
-    public AuthorizationPage() {
+    public AuthorizationPage(WebDriver driver) {
         super(driver);
     }
 

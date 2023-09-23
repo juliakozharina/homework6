@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class PageMain {
-    private String baseUrl = "https://otus.ru/";
+    private static final String baseUrl = "https://otus.ru/";
 
     @FindBy(xpath = "//div[@class=\"sc-r03h0s-5 bYKNcH\"]")
     private WebElement loginButton;
@@ -21,7 +21,9 @@ public class PageMain {
         return loginButton;
     }
 
-    public WebElement getUserName() { return userName; }
+    public WebElement getUserName() {
+        return userName;
+    }
 
     public WebElement getMyProfile() {
         return myProfile;
