@@ -51,6 +51,9 @@ public class ProfilePage extends BasePage {
 //    public ProfilePage() {
 //        super();
 //    }
+     public ProfilePage fillProfileFields() {
+      return new ProfilePage();
+    }
 
     public WebElement getNAME_FIELD() {
         return NAME_FIELD;

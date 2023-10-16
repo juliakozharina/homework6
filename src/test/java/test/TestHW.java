@@ -7,11 +7,12 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import pages.ProfilePage;
 
 
 public class TestHW {
     WebDriverOptions webDriverOptions = new WebDriverOptions();
-    Step step = new Step();
+//    Step step = new Step();
 
     private String LOGIN = System.getProperty("juliako13@mail.ru");
     private String PASSWORD = System.getProperty("1234Qwerty12345&");
@@ -33,11 +34,11 @@ public class TestHW {
 
     @Test
     public void someTest()throws InterruptedException{
-        step.openMainPage();
-        step.openAuthorizationForm();
-        step.fillTheAuthorizationForm(LOGIN,PASSWORD);
-        step.submitAuthorizationForm();
-        step.fillProfileFields()
+        openMainPage();
+        openAuthorizationForm();
+        fillTheAuthorizationForm(LOGIN,PASSWORD);
+        submitAuthorizationForm();
+        fillProfileFields()
                 .enterNAME_FIELD("Юлия")
                 .enterLATIN_NAME_FIELD("Julia")
                 .enterLATIN_SURNAME_FIELD("Иванова")
@@ -53,10 +54,28 @@ public class TestHW {
         webDriverOptions.create();
 
 
-        step.openMainPage();
-        step.openAuthorizationForm();
-        step.fillTheAuthorizationForm(LOGIN,PASSWORD);
-        step.submitAuthorizationForm();
-        step.openProfilePage();
+        openMainPage();
+        openAuthorizationForm();
+        fillTheAuthorizationForm(LOGIN,PASSWORD);
+        submitAuthorizationForm();
+        openProfilePage();
+    }
+
+    private void openProfilePage() {
+    }
+
+    private ProfilePage fillProfileFields() {
+    }
+
+    private void submitAuthorizationForm() {
+    }
+
+    private void fillTheAuthorizationForm(String login, String password) {
+    }
+
+    private void openAuthorizationForm() {
+    }
+
+    private void openMainPage() {
     }
 }

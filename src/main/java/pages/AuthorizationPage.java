@@ -45,4 +45,15 @@ public class AuthorizationPage extends BasePage {
     public void authorize() {
         getSubmitButton().click();
     }
+    public void fillTheAuthorizationForm(String LOGIN, String PASSWORD){
+        AuthorizationPage authorizationPage = new AuthorizationPage();
+        authorizationPage.enterLogin(LOGIN);
+        authorizationPage.enterPassword(PASSWORD);
+
+    }
+
+    public void submitAuthorizationForm(){
+        AuthorizationPage authorizationPage = new AuthorizationPage();
+        authorizationPage.authorize();
+    }
 }

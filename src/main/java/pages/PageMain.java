@@ -42,4 +42,19 @@ public class PageMain {
         WebDriverOptions.getAction().moveToElement(getUserName()).perform();
         getMyProfile().click();
     }
+
+    PageMain pageMain = new PageMain();
+
+    public void openMainPage(){
+        pageMain.open();
+    }
+
+    public void openAuthorizationForm(){
+        PageMain mainPage = new PageMain();
+        mainPage.openAuthorizationPage();
+    }
+        public void openProfilePage() {
+        PageMain mainPage = new PageMain();
+        mainPage.openProfilePage();
+    }
 }
