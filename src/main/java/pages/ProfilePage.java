@@ -144,7 +144,6 @@ public class ProfilePage extends BasePage {
     }
 
     public ProfilePage selectCITYMoscow() throws InterruptedException {
-        Thread.sleep(500);
         String selectCITYMoscow = "document.querySelector(\"[name='city']\").click(); " +
                 "+ document.querySelector(\"[title='Москва']\").click();";
         ((JavascriptExecutor) WebDriverOptions.getDriver()).executeScript(selectCITYMoscow);

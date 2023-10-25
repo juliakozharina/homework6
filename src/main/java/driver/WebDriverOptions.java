@@ -19,7 +19,7 @@ public class WebDriverOptions {
     protected  WebDriverWait wait;
     protected  Actions action;
 
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
         return driver;
     }
 
