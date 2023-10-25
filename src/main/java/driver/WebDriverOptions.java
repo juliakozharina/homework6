@@ -1,6 +1,5 @@
 package driver;
 
-import help.Step;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,13 +13,13 @@ import java.util.concurrent.TimeUnit;
 
 public class WebDriverOptions {
 
-    public static final Logger logger = LogManager.getLogger(Step.class.getName());
+    public static final Logger logger = LogManager.getLogger();
 
     protected  WebDriver driver;
     protected  WebDriverWait wait;
     protected  Actions action;
 
-    public  WebDriver getDriver() {
+    public WebDriver getDriver() {
         return driver;
     }
 
@@ -47,7 +46,7 @@ public class WebDriverOptions {
         logger.debug("driver is created");
     }
 
-    public  void quit(){
+    public void quit(){
         if (driver != null) {
             driver.quit();
         }

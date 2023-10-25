@@ -2,7 +2,6 @@ package test;
 
 
 import driver.WebDriverOptions;
-//import help.Step;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -12,7 +11,6 @@ import pages.ProfilePage;
 
 public class TestHW {
     WebDriverOptions webDriverOptions = new WebDriverOptions();
-//    Step step = new Step();
 
     private String LOGIN = System.getProperty("juliako13@mail.ru");
     private String PASSWORD = System.getProperty("1234Qwerty12345&");
@@ -65,6 +63,7 @@ public class TestHW {
     }
 
     private ProfilePage fillProfileFields() {
+        return null;
     }
 
     private void submitAuthorizationForm() {
